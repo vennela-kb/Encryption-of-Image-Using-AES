@@ -1,4 +1,4 @@
- LWE and AES Image Encryption using Python
+ LWE and AES Image Encryption using Python:
 Objectives:
 	To study the working of the Learning with Errors (LWE) post-quantum encryption algorithm.
 	 To encrypt and then decrypt a message using the LWE algorithm with Python modules.
@@ -40,10 +40,10 @@ Key Components:
 4. Decryption:
    - The script decrypts the message by computing a value dec from the encrypted values u and v, and the secret value s. Depending on whether dec is greater than half of q, the script determines the original message bit.
 
- AES Encryption of Image Coefficient
+ AES Encryption of Image Coefficient:
 I worked on encrypting the cH coefficient from a PNG image using AES encryption, following the method presented by Rachit Goel (available on GitHub). Initially, I converted the image to grayscale to read the cH coefficient from a 2D discrete wavelet transform, stored its original value, and then encrypted this coefficient using a key. I also made some basic changes to the encrypt and decrypt Python files to facilitate this process. The encrypted value was saved in a file named cipher.txt. Subsequently, I decrypted the values and printed them.
 
- Double Encryption with LWE
+ Double Encryption with LWE: 
 Next, I modified the code from lwe.py (Learning with Errors by Justin Mathew, available on GitHub) to implement double encryption. This involved using the cipher.txt file, which contained the AES-encrypted cH coefficient, as input for the Learning with Errors algorithm. This double encryption process enhances resistance to quantum computer attacks.
 To ensure compatibility, I verified that cipher.txt contained plain text readable by the Learning with Errors repository and matched the input size required by the repository.
 
