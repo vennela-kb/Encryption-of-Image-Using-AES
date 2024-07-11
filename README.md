@@ -1,6 +1,7 @@
  LWE Encryption using Python
 
 Objectives:
+
 ❖ To study the working of the Learning with Errors (LWE) post-quantum encryption algorithm.
 ❖ To encrypt and then decrypt a message using the LWE algorithm with Python modules.
 ❖ To observe and analyze the encryption and decryption process of the LWE algorithm.
