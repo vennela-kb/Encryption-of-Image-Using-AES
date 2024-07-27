@@ -41,7 +41,7 @@ Key Components:
    - The script decrypts the message by computing a value dec from the encrypted values u and v, and the secret value s. Depending on whether dec is greater than half of q, the script determines the original message bit.
 
  AES Encryption of Image Coefficient:
-I worked on encrypting the cH coefficient from a PNG image using AES encryption, following the method presented by Rachit Goel (available on GitHub). Initially, I converted the image to grayscale to read the cH coefficient from a 2D discrete wavelet transform, stored its original value, and then encrypted this coefficient using a key. I also made some basic changes to the encrypt and decrypt Python files to facilitate this process. The encrypted value was saved in a file named cipher.txt. Subsequently, I decrypted the values and printed them.
+I worked on encrypting the cH coefficient from a PNG image using AES encryption, following the method presented by Rachit Goel (available on GitHub). Initially, I converted the image to grayscale to read the cH coefficient from a 2D discrete wavelet transformation in the the encrypt file . The encrypted value was saved in a file named cipher.txt from main.py. 
 
  Double Encryption with LWE: 
 Next, I modified the code from lwe.py (Learning with Errors by Justin Mathew, available on GitHub) to implement double encryption. This involved using the cipher.txt file, which contained the AES-encrypted cH coefficient, as input for the Learning with Errors algorithm. This double encryption process enhances resistance to quantum computer attacks.
